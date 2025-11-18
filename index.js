@@ -31,6 +31,9 @@ function updateTime() {
 }
 function updateCity(event) {
   const cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
 
   if (!cityTimeZone) return; // if user selects "Select a city..", do nothing
 
