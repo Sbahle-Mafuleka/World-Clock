@@ -29,6 +29,29 @@ function updateTime() {
     .tz("America/Los_Angeles")
     .format("hh:mm:ss <small>A</small>");
 }
+function updateCity(event) {
+  const cityTimeZone = event.target.value;
+
+  if (!cityTimeZone) return; // if user selects "Select a city..", do nothing
+
+  const cityName = cityTimeZone.replace("_", " ").split("/")[1];
+
+  const cityElement = document.querySelector(".City");
+
+  cityElement.innerHTML = `
+    <div>
+      <h2>${cityName}</h2>
+      <div class="Date">${moment()
+        .tz(cityTimeZone)
+        .format("dddd DD MMMM YYYY")}</div>
+    </div>
+    <div class="Time">${moment()
+      .tz(cityTimeZone)
+      .format("hh:mm:ss")} <small>${moment()
+    .tz(cityTimeZone)
+    .format("A")}</small></div>
+  `;
+}
 
 // run immediately
 updateTime();
