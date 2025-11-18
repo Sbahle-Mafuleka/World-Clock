@@ -4,50 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Stylesheet" href="../CSS/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"></script>
     <title>World Clock - Sbahle Mafuleka</title>
   </head>
+
   <body>
-    <!-- Container has everything from heading to the footer -->
     <div class="Container">
       <h1>World Clock</h1>
+
       <select>
         <option value="">Select a city..</option>
         <option value="">New York</option>
         <option value="">London</option>
         <option value="">Tokyo</option>
       </select>
-      <!-- City has the date and time for each city -->
-    
 
-      <div class="City">
+      <div class="City" id="Tokyo">
         <div>
           <h2>Tokyo</h2>
-          <div class="Date">Friday 19 September 2025</div>
+          <div class="Date"></div>
         </div>
-        <div class="Time">01:17:38 <small>PM</small></div>
+        <div class="Time"></div>
       </div>
 
-       <div class="City">
+      <div class="City" id="Paris">
         <div>
           <h2>Paris</h2>
-          <div class="Date">Friday 19 September 2025</div>
+          <div class="Date"></div>
         </div>
-        <div class="Time">11:17:38 <small>AM</small></div>
+        <div class="Time"></div>
       </div>
-        <div class="City">
+
+      <div class="City" id="Los Angeles">
         <div>
           <h2>Los Angeles</h2>
-          <div class="Date">Friday 19 September 2025</div>
+          <div class="Date"></div>
         </div>
-        <div class="Time">11:17:38 <small>AM</small></div>
+        <div class="Time"></div>
       </div>
-    <!-- Footer has the creator information and github link -->
-    <footer>
-      Created by Sbahle Mafuleka and is open sourced on
-      <a href="https://github.com/Sbahle-Mafuleka/World-Clock" target="_blank">
-        Github
-      </a>
-    </footer>
+
+      <footer>
+        Created by Sbahle Mafuleka and open sourced on
+        <a
+          href="https://github.com/Sbahle-Mafuleka/World-Clock"
+          target="_blank"
+        >
+          Github
+        </a>
+      </footer>
+    </div>
+
     <script src="../Javascript/index.js"></script>
   </body>
 </html>
