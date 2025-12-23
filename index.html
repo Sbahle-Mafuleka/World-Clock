@@ -7,42 +7,58 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"></script>
+
     <title>World Clock - Sbahle Mafuleka</title>
   </head>
 
   <body>
-    <div class="Container">
+    <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <!-- Drop down -->
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">New York</option>
-        <option value="">London</option>
-        <option value="">Tokyo</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Africa/Johannesburg">Durban</option>
       </select>
 
-      <div class="City" id="Tokyo">
-        <div>
-          <h2>Tokyo</h2>
-          <div class="Date"></div>
-        </div>
-        <div class="Time"></div>
-      </div>
+      <div id="city-display"></div>
+      <!-- Cities Display -->
 
-      <div class="City" id="Paris">
-        <div>
-          <h2>Paris</h2>
-          <div class="Date"></div>
+      <div class="cities">
+        <div class="City" id="Tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="Date"></div>
+          </div>
+          <div class="Time"></div>
         </div>
-        <div class="Time"></div>
-      </div>
 
-      <div class="City" id="Los Angeles">
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="Date"></div>
+        <div class="City" id="Paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="Date"></div>
+          </div>
+          <div class="Time"></div>
         </div>
-        <div class="Time"></div>
+
+        <div class="City" id="LosAngeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="Date"></div>
+          </div>
+          <div class="Time"></div>
+        </div>
+
+        <div class="City" id="Durban">
+          <div>
+            <h2>Durban</h2>
+            <div class="Date"></div>
+          </div>
+          <div class="Time"></div>
+        </div>
       </div>
 
       <footer>
